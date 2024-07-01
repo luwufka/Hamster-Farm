@@ -20,7 +20,7 @@ def get_reward(urls):
         print(Fore.WHITE + "[INFO]: Launching Chrome...")
         chrome = webdriver.Chrome(service=service, options=chrome_options)
         chrome.get(url)
-        print(Fore.WHITE + "[INFO]: Loading the Hamster Combat page...")
+        print(Fore.WHITE + "[INFO]: Loading the Hamster Kombat page...")
         while True:
             if (chrome.execute_script(JS_REWARDBUTTON_ISLOADING) == True):
                 print(Fore.MAGENTA + "[INFO]: Getting a reward...")
