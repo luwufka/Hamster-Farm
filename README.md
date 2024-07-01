@@ -1,4 +1,4 @@
-# Hamster Farm
+# ![hamster-x32](https://github.com/luwufka/Hamster-Farm/assets/126056242/fe510c02-aad7-4553-9b93-9d469561c6f5) Hamster Farm
 Automatic reward collection in Hamster Kombat.
 > made for fun. but it really works :0
 
