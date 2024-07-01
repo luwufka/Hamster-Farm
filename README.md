@@ -11,11 +11,13 @@ Automatic reward collection in Hamster Kombat.
 2. Start the game in the official Hamster Kombat bot. Even if you received a message that you need to log in from your phone, it's okay.
 3. At this time, run this script in the browser console: `document.querySelector('iframe[title^=Hamster]').src`
 ![image](https://github.com/luwufka/Hamster-Farm/assets/126056242/9ff8e504-c883-4fa2-a0bd-dab2b4cde32d)
-5. You get a very long link at the output. You must add this link to the array of **URLS** in **config.py**
+6. You get a very long link at the output. Set the **tgWebAppVersion** value in the **ios** link, or another option:![image](https://github.com/luwufka/Hamster-Farm/assets/126056242/ed6b82b8-8648-43da-8ad8-0293c1842793)
+7. Add the modified URL to the **URLS** array. *Array of URLs in the file **config.py**.*
+
    
 *p.s. you can use multiple links and add them to the array to farm on multiple accounts...*
 ### ⚙️ Installation and launch:
-*After you have set up config.py let's start the installation and launch.*
+*After you have set up **config.py** let's start the installation and launch.*
 1. Install all components from **requirements.txt**.
 2. Launch **main.py**.
 
