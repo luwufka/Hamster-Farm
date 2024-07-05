@@ -19,12 +19,12 @@ Automatic reward collection in Hamster Kombat.
 *p.s. you can use multiple links and add them to the array to farm on multiple accounts...*
 ### ⚙️ Installation and launch:
 *After you have set up **config.py** let's start the installation and launch.*
-1. Install all components from **requirements.txt**.
+1. Install all libraries from **requirements.txt**.
 2. Launch **main.py**.
+> If the driver is not installed, the script will install it itself. But...
+1. Copy the Google Chrome version by URL: `chrome://settings/help`
+2. Enter it **without extra spaces and characters!**
+3. At the end of the installation, the script will be closed, and the file **chromedriver.exe** it should appear in the directory with the script.
+4. Run **main.py** again.
 
-*If you don't have chromedriver.exe it will be installed automatically. You just need to enter the Chrome version without extra spaces, etc.*
-
-After installation, the script will be closed and you need to run **main.py** again.
-
-## If everything is done correctly, the script will automatically use Selenium and ChromeDriver to collect the reward (which accumulated while you were not in the game).
-good luck :3
+> Good Luck!
