@@ -20,5 +20,6 @@ else:
     import tools
     while True:
         tools.get_reward(URLS)
+        print(Fore.WHITE + "============================")
         print(Fore.LIGHTYELLOW_EX + "[INFO]: Completed! We're waiting...")
         sleep(GETREWARD_COOLDOWN_SEC)
