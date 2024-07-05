@@ -18,8 +18,8 @@ Automatic reward collection in Hamster Kombat.
 4. You get a very long link at the output. In the link, set the value **tgWebAppVersion** to **ios** (you can use another option, but not the fact that some will work): ![image](https://github.com/luwufka/Hamster-Farm/assets/126056242/a5c194de-2367-4cb8-b9fb-2750217659b8)
 
 5. Add the modified URL to the **URLS** array. *Array of URLs in the file **config.py**.*
+> by the way, the "GETREWARD_COOLDOWN_SEC" parameter is the frequency in seconds.
 
-   
 *p.s. you can use multiple links and add them to the array to farm on multiple accounts...*
 ### ⚙️ Installation and launch:
 *After you have set up **config.py** let's start the installation and launch.*
