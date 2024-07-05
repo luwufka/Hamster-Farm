@@ -4,6 +4,7 @@ from selenium.webdriver.chrome.options import Options
 from config import DRIVER_PATH, JS_GETREWARDBUTTON, JS_GETREWARDVALUE, JS_REWARDBUTTON_ISLOADING
 from time import sleep
 from colorama import Fore
+from datetime import datetime
 
 chrome_options = Options()
 chrome_options.add_argument("--headless")
@@ -16,7 +17,7 @@ def get_reward(urls):
     i = 1
     for url in urls:
         print(Fore.WHITE + "============================")
-        print(Fore.CYAN + f"[INFO]: The reward has started for URL #{i}...")
+        print(Fore.CYAN + f"[INFO {Fore.WHITE}| {datetime.now().time()}{Fore.LIGHTGREEN_EX}]: The reward has started for URL #{i}...")
         print(Fore.WHITE + "[INFO]: Launching Chrome...")
         chrome = webdriver.Chrome(service=service, options=chrome_options)
         chrome.get(url)
@@ -26,7 +27,7 @@ def get_reward(urls):
                 print(Fore.MAGENTA + "[INFO]: Getting a reward...")
                 chrome.execute_script(JS_GETREWARDBUTTON)
                 reward_value = chrome.execute_script(JS_GETREWARDVALUE)
-                print(Fore.LIGHTGREEN_EX + f"[INFO]: Successfully! You took it away: {reward_value}")
+                print(Fore.LIGHTGREEN_EX + f"[INFO {Fore.WHITE}| {datetime.now().time()}{Fore.LIGHTGREEN_EX}]: Successfully! You took it away: {reward_value}")
                 chrome.quit()
                 print(Fore.WHITE + "[INFO]: Quitting a Chrome...")
                 break
