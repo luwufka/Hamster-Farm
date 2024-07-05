@@ -17,7 +17,7 @@ def get_reward(urls):
     i = 1
     for url in urls:
         print(Fore.WHITE + "============================")
-        print(Fore.CYAN + f"[INFO {Fore.WHITE}| {datetime.now().time().strftime("%H:%M:%S")}{Fore.CYAN}]: The reward has started for URL #{i}...")
+        print(Fore.CYAN + f"[INFO {Fore.WHITE}| {datetime.now().time().strftime('%H:%M:%S')}{Fore.CYAN}]: The reward has started for URL #{i}...")
         print(Fore.WHITE + "[INFO]: Launching Chrome...")
         chrome = webdriver.Chrome(service=service, options=chrome_options)
         chrome.get(url)
@@ -27,7 +27,7 @@ def get_reward(urls):
                 print(Fore.MAGENTA + "[INFO]: Getting a reward...")
                 chrome.execute_script(JS_GETREWARDBUTTON)
                 reward_value = chrome.execute_script(JS_GETREWARDVALUE)
-                print(Fore.LIGHTGREEN_EX + f"[INFO {Fore.WHITE}| {datetime.now().time().strftime("%H:%M:%S")}{Fore.LIGHTGREEN_EX}]: Successfully! You took it away: {reward_value}")
+                print(Fore.LIGHTGREEN_EX + f"[INFO {Fore.WHITE}| {datetime.now().time().strftime('%H:%M:%S')}{Fore.LIGHTGREEN_EX}]: Successfully! You took it away: {reward_value}")
                 chrome.quit()
                 print(Fore.WHITE + "[INFO]: Quitting a Chrome...")
                 break
