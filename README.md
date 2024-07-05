@@ -8,6 +8,7 @@ Automatic reward collection in Hamster Kombat.
 > You need to get a URL. But how?
 ### 🐹 How do I get the URL?
 1. Log in to Telegram Web (Use Version A)!
+   
 ![image](https://github.com/luwufka/Hamster-Farm/assets/126056242/3817f13d-0698-4562-9205-5841f9f0ee5f)
 3. Start the game in the official Hamster Kombat bot. Even if you received a message that you need to log in from your phone, it's okay.
 4. At this time, run this script in the browser console: `document.querySelector('iframe[title^=Hamster]').src`
