@@ -14,6 +14,8 @@ Automatic reward collection in Hamster Kombat.
 
 2. Start the game in the official Hamster Kombat bot. Even if you received a message that you need to log in from your phone, it's okay.
 3. At this time, run this script in the browser console: `document.querySelector('iframe[title^=Hamster]').src`
+> ![image](https://github.com/luwufka/Hamster-Farm/assets/126056242/689ca218-5ad1-4db8-9415-311359eb06d0) instead of "clicker", select "top".
+
 ![image](https://github.com/luwufka/Hamster-Farm/assets/126056242/9ff8e504-c883-4fa2-a0bd-dab2b4cde32d)
 4. You get a very long link at the output. In the link, set the value **tgWebAppVersion** to **ios** (you can use another option, but not the fact that some will work): ![image](https://github.com/luwufka/Hamster-Farm/assets/126056242/a5c194de-2367-4cb8-b9fb-2750217659b8)
 
